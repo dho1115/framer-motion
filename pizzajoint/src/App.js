@@ -10,6 +10,8 @@ function App() {
   //CLONE A SPECIFIC BRANCH: git clone -b lesson-2 https://github.com/iamshaunjp/framer-motion.git.
 
   //npm i --save framer-motion to install framer-motion. 
+
+  //Stopped @ 4:15 of https://www.youtube.com/watch?v=JD6Fn80UBys&list=PL4cUxeGkcC9iHDnQfTHEVVceOEBsOf07i&index=4.
   
   const [pizza, setPizza] = useState({ base: "", toppings: [] });
 

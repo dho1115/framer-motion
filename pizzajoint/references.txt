@@ -7,3 +7,9 @@ FRAMER MOTION REFERENCES:
 <motion.div animate={{ fontSize: 50 }}></motion.div>
 (4) You can add x or y properties inside animate={{ }} to move it left or right: 
 animate={{ x: 105 }}.
+
+#Initial.
+Allows us to set an INITIAL state from which the element animates. So, when you do:
+initial={{x: 15}}
+animate={{x: 157}}
+15 is where you animate FROM and 157 is where you animate TO.
