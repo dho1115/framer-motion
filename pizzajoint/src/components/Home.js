@@ -10,9 +10,10 @@ const Home = () => {
         Welcome to Pizza Joint
       </motion.h2>
       <Link to="/base">
-        <button>
+        {/* See #ToAninmate(start). */}
+        <motion.button>
           Create Your Pizza
-        </button>
+        </motion.button>
       </Link>
     </div>
   )
