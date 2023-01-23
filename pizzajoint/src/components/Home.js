@@ -6,7 +6,6 @@ const Home = () => {
   return (
     // Please see #Initial. inside references for initial prop.
     <motion.div className="home container"
-      transition={{duration: 7, delay: 7.1}}
       initial={{opacity: 0}}
       animate={{opacity: 1}}
       // animate={{marginTop: 150, opacity: 0.3, rotateZ: 185}}
