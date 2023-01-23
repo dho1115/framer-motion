@@ -1,0 +1,9 @@
+FRAMER MOTION REFERENCES: 
+
+#ToAninmate(start)
+(1) Import motion.
+(2) To make anything "animatable", just add "motion." next to the element. Example: <motion.h3></motion.h3>, <motion.div></motion.div>, <motion.p></motion.p>. This will add framer motion animating properties.
+(3) Inside the <motion.[component name]></motion.[component name]>, add the following prop: animate={{ fontSize: 50 }}. So, in this example, the fontSize would be animated to 50. So, if the element we want to aninate is, say, a div:
+<motion.div animate={{ fontSize: 50 }}></motion.div>
+(4) You can add x or y properties inside animate={{ }} to move it left or right: 
+animate={{ x: 105 }}.
