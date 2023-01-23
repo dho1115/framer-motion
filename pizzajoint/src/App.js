@@ -7,6 +7,10 @@ import Toppings from './components/Toppings';
 import Order from './components/Order';
 
 function App() {
+  //CLONE A SPECIFIC BRANCH: git clone -b lesson-2 https://github.com/iamshaunjp/framer-motion.git.
+
+  //npm i --save framer-motion to install framer-motion. 
+  
   const [pizza, setPizza] = useState({ base: "", toppings: [] });
 
   const addBase = (base) => {
