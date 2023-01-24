@@ -19,3 +19,6 @@ When we say: animate={{x: 0}} we do not mean that the element that animate={{x: 
 
 #type tween.
 The animation will not have the "bounce" effect that you would normally see with the default "spring".
+
+#stiffness.
+The stiffness property only works with type: "spring". The higher the spring, the more "bounce" it will have.
