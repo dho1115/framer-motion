@@ -6,7 +6,11 @@ const Base = ({ addBase, pizza }) => {
   const bases = ['Classic', 'Thin & Crispy', 'Thick Crust'];
 
   return (
-    <div className="base container">
+    <motion.div className="base container"
+      initial={{ x: '100vw' }} //Start: 100vw to the RIGHT.
+      animate={{ x: 0 }}
+      transition={{ type: 'spring' /* default */, delay: 1.25 }}
+    >
 
       <h3>Step 1: Choose Your Base</h3>
       <ul>
@@ -24,6 +28,7 @@ const Base = ({ addBase, pizza }) => {
         <motion.div className="next"
           initial={{ x: '-100vw' }}
           animate={{ x: 0 }} //See #animating x:0
+          transition={{type: 'spring', stiffness: 305}} //see #stiffness.
         >
           <Link to="/toppings">
             <button>Next</button>
@@ -31,7 +36,7 @@ const Base = ({ addBase, pizza }) => {
         </motion.div>
       )}
 
-    </div>
+    </motion.div>
   )
 }
 
