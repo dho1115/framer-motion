@@ -21,4 +21,8 @@ When we say: animate={{x: 0}} we do not mean that the element that animate={{x: 
 The animation will not have the "bounce" effect that you would normally see with the default "spring".
 
 #stiffness.
-The stiffness property only works with type: "spring". The higher the spring, the more "bounce" it will have.
+The stiffness property only works with type: "spring". The higher the spring, the more "bounce" it will have. transition={{ type: 'spring', stiffness: 350 }}. Again, you MUST have a type: 'spring'. Default spring is about 100.
+
+#duration.
+The transition type {{ duration: 3.5 }} ONLY works on a type: "tween":
+transition={{ type: 'tween', duration: 3.5 }}

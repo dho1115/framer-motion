@@ -24,7 +24,7 @@ const Header = () => {
         initial={{y: -175}}
         animate={{ y: -10 }}
         // transition={{ delay: 0.75, type: "tween" }} //See #type tween
-        transition={{ delay: 0.75, type: "spring", stiffness: 150 }} //default type. Also, see #stiffness
+        transition={{ delay: 0.75, type: "spring", stiffness: 150 }} //default type. Also, see #stiffness and #duration.
       >
         <h1>Pizza Joint</h1>
       </motion.div>
