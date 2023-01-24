@@ -7,8 +7,8 @@ const Home = () => {
     // Please see #Initial. inside references for initial prop.
     <motion.div className="home container"
       initial={{opacity: 0}}
-      animate={{opacity: 1}}
-      // animate={{marginTop: 150, opacity: 0.3, rotateZ: 185}}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 5.3, duration: 3.7 }} //Start this transition after 1.5 seconds.
     >
       {/* See #ToAninmate(start). */}
       <h2>
