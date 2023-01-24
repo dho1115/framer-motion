@@ -16,3 +16,6 @@ animate={{x: 157}}
 
 #animating x:0.
 When we say: animate={{x: 0}} we do not mean that the element that animate={{x: 0}} starts at 0. What it actually means is to MOVE x zero (0) positions from where it normally is at.
+
+#type tween.
+The animation will not have the "bounce" effect that you would normally see with the default "spring".
