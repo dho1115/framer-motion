@@ -11,7 +11,6 @@ const Base = ({ addBase, pizza }) => {
       animate={{ x: 0 }}
       transition={{ type: 'spring' /* default */, delay: 1.25 }}
     >
-
       <h3>Step 1: Choose Your Base</h3>
       <ul>
         {bases.map(base => {

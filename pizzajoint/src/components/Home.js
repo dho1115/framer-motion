@@ -16,7 +16,9 @@ const Home = () => {
       </h2>
       <Link to="/base">
         <motion.button
-          animate={{}}
+          whileHover={{ scale: 1.5 }}
+          // whileHover={{ scale: 1.5, transition: { duration: 3.1 } }}
+          // whileTap={{ backgroundColor: 'red' }}
         >
           Create Your Pizza
         </motion.button>
