@@ -7,6 +7,8 @@ import Toppings from './components/Toppings';
 import Order from './components/Order';
 
 function App() {
+  //To go back to [branch name] when you are on another branh: git checkout [branch name]. Example: If you are on lesson 5 and you want to checkout lesson-2: git checkout lesson-2
+
   //CLONE A SPECIFIC BRANCH: git clone -b lesson-2 https://github.com/iamshaunjp/framer-motion.git.
 
   //npm i --save framer-motion to install framer-motion. 

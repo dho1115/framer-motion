@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const Header = () => {
-  //test comment here.
   return (
     <header>
       <Link to='/'>
