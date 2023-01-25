@@ -10,7 +10,7 @@ const Base = ({ addBase, pizza }) => {
       initial={{ x: '100vw' }} //Start: 100vw to the RIGHT.
       animate={{ x: 0 }}
       transition={{ type: 'spring' /* default */, delay: 1.25 }}
-    >
+    >motion.
       <h3>Step 1: Choose Your Base</h3>
       <ul>
         {bases.map(base => {
@@ -30,7 +30,11 @@ const Base = ({ addBase, pizza }) => {
           transition={{type: 'spring', stiffness: 305}} //see #stiffness.
         >
           <Link to="/toppings">
-            <button>Next</button>
+            <motion.button
+              whileHover={{ scale: 1.5, textShadow: '0px 0px 55px rgb(255, 255, 255)', boxShadow: '0px 0px 55px rgb(255, 255, 255)' }}
+            >
+              Next
+            </motion.button>
           </Link>
         </motion.div>
       )}

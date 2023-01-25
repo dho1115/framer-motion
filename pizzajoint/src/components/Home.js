@@ -16,7 +16,7 @@ const Home = () => {
       </h2>
       <Link to="/base">
         <motion.button
-          whileHover={{ scale: 1.5 }}
+          whileHover={{ scale: 1.5, textShadow: '0px 0px 55px rgb(255, 255, 255)', boxShadow: '0px 0px 55px rgb(255, 255, 255)' }}
           // whileHover={{ scale: 1.5, transition: { duration: 3.1 } }}
           // whileTap={{ backgroundColor: 'red' }}
         >
