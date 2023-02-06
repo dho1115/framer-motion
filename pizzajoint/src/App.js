@@ -13,7 +13,7 @@ function App() {
 
   //npm i --save framer-motion to install framer-motion. 
 
-  //Stopped 6:01 @ https://www.youtube.com/watch?v=G_y61k-4i6E&list=PL4cUxeGkcC9iHDnQfTHEVVceOEBsOf07i&index=7.
+  //Stopped 0:23 @ https://www.youtube.com/watch?v=lCe0F_0sbeE&list=PL4cUxeGkcC9iHDnQfTHEVVceOEBsOf07i&index=8.
   
   const [pizza, setPizza] = useState({ base: "", toppings: [] });
 

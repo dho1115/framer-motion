@@ -20,9 +20,9 @@ const nextVariants = {
     x: '-100vw'
   },
   visible: {
-    x: 0,
+    x: 0, //See #animating x:0
     transition: {
-      type: 'spring', stiffness: 305
+      type: 'spring', stiffness: 305 //see #stiffness.
     }
   }
 }
@@ -61,9 +61,7 @@ const Base = ({ addBase, pizza }) => {
       {/* Please see #Initial. inside references for initial prop. */}
       {pizza.base && (
         <motion.div className="next"
-          initial={{ x: '-100vw' }}
-          animate={{ x: 0 }} //See #animating x:0
-          transition={{type: 'spring', stiffness: 305}} //see #stiffness.
+          variants={nextVariants}
         >
           <Link to="/toppings">
             <motion.button
