@@ -26,3 +26,17 @@ The stiffness property only works with type: "spring". The higher the spring, th
 #duration.
 The transition type {{ duration: 3.5 }} ONLY works on a type: "tween":
 transition={{ type: 'tween', duration: 3.5 }}
+
+#origin.
+When you scale, it will scale, but buy default, it will also move to the left unless you add inside the whileHover an originX of 0.
+
+#variants.
+This allows you to move your animatable properties outside the component and into an object. The keys "hidden" and "visible" are arbitrary names. You do not have to call them "hidden" or "visible". You can call it "init", "animate" or anything you want.
+
+To create a variant, you need to:
+(1) Create a variant object: const variantObject = { hidden: { properties }, visible: { properties} }.
+(2) Inside the element you applied the "motion" prefix to, add a 'variants' prop:
+<motion.div variants={variantObject}>...</motion.div>
+(3) Add this to the initial and animate props:
+<motion.div variants={variantsObject} initial={hidden} animate={visible}></motion.div>
+(4) If there is a transition, it would go inside the 'visible' object b/c that is the object we want the transition to occur.
