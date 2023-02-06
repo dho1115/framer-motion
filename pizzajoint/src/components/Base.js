@@ -15,6 +15,18 @@ const containerVariants = {
   }
 }
 
+const nextVariants = {
+  hidden: {
+    x: '-100vw'
+  },
+  visible: {
+    x: 0,
+    transition: {
+      type: 'spring', stiffness: 305
+    }
+  }
+}
+
 const Base = ({ addBase, pizza }) => {
   const bases = ['Classic', 'Thin & Crispy', 'Thick Crust'];
 
