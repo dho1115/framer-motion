@@ -41,6 +41,10 @@ To create a variant, you need to:
 <motion.div variants={variantsObject} initial={hidden} animate={visible}></motion.div>
 (4) If there is a transition, it would go inside the 'visible' object b/c that is the object we want the transition to occur.
 
+#variantPropgagation.
 Note about variants:
 The "visible" and "hidden" properties from parent automatically are passed to the children.
 So, basically, the if the properties in the nextVariants (children) were NOT called "visible" and "hidden" and were named something differently, it would not work.
+
+#when.
+Dictates WHEN you want the transition to occur. In this case, we want it to occur BEFORE any children. So, we want the transition to take place first... then the children. There is also an afterChildren.

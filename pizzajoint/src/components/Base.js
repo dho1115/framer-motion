@@ -31,12 +31,6 @@ const Base = ({ addBase, pizza }) => {
   const bases = ['Classic', 'Thin & Crispy', 'Thick Crust'];
 
   return (
-    // <motion.div className="base container"
-    //   initial={{ x: '100vw' }} //Start: 100vw to the RIGHT.
-    //   animate={{ x: 0 }}
-    //   transition={{ type: 'spring' /* default */, delay: 1.25 }}
-    // > OLD CODE.
-
     <motion.div className="base container"
       variants={containerVariants}
       initial='hidden'
@@ -61,7 +55,7 @@ const Base = ({ addBase, pizza }) => {
       {/* Please see #Initial. inside references for initial prop. */}
       {pizza.base && (
         <motion.div className="next"
-          variants={nextVariants}
+          variants={nextVariants} //See #variantPropagation.
         >
           <Link to="/toppings">
             <motion.button
